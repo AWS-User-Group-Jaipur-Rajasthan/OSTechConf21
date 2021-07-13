@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assests/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+/>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header" class="d-flex align-items-center ">
+        <div class="container-fluid container-xxl d-flex align-items-center">
+    
+          <div id="logo" class="me-auto">
+            <a href="index.html" class="scrollto"><img src="./assests/images/TransparentUGDarklogo.png" alt="" title=""></a>
+          </div>
+    
+        
+        </div>
+      </header>
+      <!-- End Header -->
+    
+      <!-- ======= Hero Section ======= -->
+      <section id="hero">
+        <div class="hero-container" data-aos="zoom-in" data-aos-delay="20">
+            <h2 style="color: white;font-size:32px; ">Hey Folks, I am Aastha Saxena and I have completed my task.</h2>
+          <h1 class="mb-4 pb-0">AWS UG <span>OSTech</span> Conf <strong id="s21">2021</strong></h1>
+          <p class="mb-4 pb-0">July 24th, 2021 - July 25th, 2021</p>
+          <div class="countdown">
+            <div>
+              <p id="tdays" class="big-text" style="font-size: 36px;">0</p>
+              <span style="font-size: 30px;">Days</span>
+            </div>
+            <div>
+              <p id="thours" class="big-text" style="font-size: 36px;">0</p>
+              <span style="font-size: 30px;">Hours</span>
+            </div>
+            <div>
+              <p id="tmin" class="big-text" style="font-size: 36px;">0</p>
+              <span style="font-size: 30px;">Min</span>
+            </div>
+            <div>
+              <p id="tsec" class="big-text" style="font-size: 36px;">0</p>
+              <span style="font-size: 30px;">Sec</span>
+            </div>
+          </div>
+     
+          <p> Register at <span style="color:#9d65fc">awsugjaipur.tech</span></p>
+    
+    
+    
+        </div>
+       
+      </section>
+      <script>
+          
+
+//countdown timer
+var countDownDate = new Date('July 24, 2021 10:00:00').getTime();
+var x = setInterval(function () {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById('tdays').innerHTML = days;
+  document.getElementById('thours').innerHTML = hours;
+  document.getElementById('tmin').innerHTML = minutes;
+  document.getElementById('tsec').innerHTML = seconds;
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById('timer').innerHTML = 'Event is finished';
+  }
+}, 1000);
+
+
+      </script>
+     
+      <script src="./assests/counter.js"></script>
+</body>
+</html>
